@@ -14,7 +14,7 @@
             document.getElementById("nip").value = "792-908-11-22";
             document.getElementById("ipv4").value = "192.122.2.4";
             document.getElementById("webadres").value = "www.apple.com";
-            document.getElementById("number").value = '900800400';
+            document.getElementById("number").value = '900-800-400';
             document.getElementById("idcard").value = "DPO547692"
         }
     </script>
@@ -42,12 +42,16 @@
             <input type="text" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{1.2}.[0-9]{1.2}" placeholder="111.111.11.11" class="input-form" id="ipv4" required>
 
             <label for="number" class="form-label">Phone number</label>
-            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="111-222-333" class="input-form" id="number" required>
+            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="111-222-333" class="input-form" id="number" required>
 
             <label for="webadres" class="form-label">Web adres</label>
             <input class="input-form" id="webadres" placeholder="www.example.com" pattern="(www\.|https?:\/\/)?([a-zA-Z0-9]+\.)+([a-zA-Z0-9]+)" required>
 
-            <a class="btn-fill" href="#" onClick="autoFill(); return false;" role="button">Fill</a>
+            <a href="#" onClick="autoFill(); return false;" role="button">
+                <div class="btn-fill">
+                    Fill
+                </div>
+            </a>
 
         </form>
     </div>
