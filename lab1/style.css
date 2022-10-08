@@ -20,14 +20,14 @@ body {
     border-radius: 15px;
     height: 20px;
     padding: 5px;
-    border: 1px solid #000;
+    border: 1px solid white;
     margin-bottom: 10px;
     background-color: white;
     color: black;
 }
 
 .form-label {
-    font-size: 15px;
+    font-size: 13px;
     color: #333;
 }
 
