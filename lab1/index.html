@@ -9,17 +9,17 @@
 
     <script>
         function autoFill() {
-            document.getElementById("fmail").value = "piotr@gmail.com";
+            document.getElementById("email").value = "piotr@gmail.com";
             document.getElementById("postcode").value = "90-111";
             document.getElementById("nip").value = "792-908-11-22";
             document.getElementById("ID").value = "AAA123456";
-            document.getElementById("IPv4").value = "192.122.2.4";
+            document.getElementById("ipv4").value = "192.122.2.4";
             document.getElementById("web").value = "www.asdasd.com";
             document.getElementById("dir").value = "C:\\windows\\temp";
             document.getElementById("directory_big").value = 'C:\\user\\desktop\\Lab';
             document.getElementById("file").value = '/etc/hosts';
             document.getElementById("ip6").value = 'FE80:0000:0000:0000:3423:B3FF:F8FF:1231';
-            document.getElementById("phone").value = '+48900800400';
+            document.getElementById("number").value = '+48900800400';
         }
     </script>
 
@@ -33,7 +33,7 @@
             <input type="email" name="email" placeholder="example@example.com" class="input-form" id="email" oninput="changecolor(); return false;">
 
             <label for="postcode" class="form-label">Postcode</label>
-            <input type="text" name="postcode" placeholder="00-000" pattern="[0-9]{3}-[0-9]{2}" class="input-form" id="postcode" oninvalid="alert('You must fill out the form!');">
+            <input type="text" name="postcode" placeholder="00-000" pattern="[0-9]{3}-[0-9]{2}" class="input-form" id="postcode">
 
             <label for="nip" class="form-label">NIP</label>
             <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="000-0000-00-00" class="input-form" id="nip">
