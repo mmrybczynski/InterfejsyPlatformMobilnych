@@ -17,22 +17,23 @@
         }
     </script>
 
-    <script>
-        function check() {
-            
-            var email = document.getElementById('email');
-            var postcode = document.getElementById('postcode');
-            var nip = document.getElementById('nip');
-            var ipv4 = document.getElementById('ipv4');
-            var number = document.getElementById('number');
+    <script> 
+            function changecolor() {
+            const colorRed = rgb(255, 0, 0);
+            const colorGreen = rgb(0,255,0);
 
-            if email.contains('@') {
-                document.body.input-form.toggle("green")
-            } else {
-                document.body.input-form.toggle("red")
+                if document.getElementById('email').contains('@') {
+                    document
+                    .getElementById("email")
+                    .setAttribute("style", "border: 1px solid " + colorGreen);
+                } else {
+                    document
+                        .getElementById("email")
+                        .setAttribute("style", "border: 1px solid " + colorRed);
+                }
+
             }
 
-        }
     </script>
 
 </head>
