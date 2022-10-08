@@ -70,11 +70,12 @@ a:link {
   }
 
 .submit-button {
-    width: 200px;
+    display: block;
+    width: 180px;
     height: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0  auto;
     border-radius: 15px;
+    border: none;
     font-size: 15px;
     line-height: 200%;
     text-align: center;
