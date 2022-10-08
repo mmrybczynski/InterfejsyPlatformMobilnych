@@ -15,23 +15,6 @@ body {
     border-radius: 20px;
 }
 
-#confirmation {
-    background-color: #090979;
-    min-height: 20px;
-    color: white;
-    padding: 10px;
-}
-
-#confirmation input {
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    background: none;
-    margin-bottom: 10px;
-    color: white;
-    width: 100%;
-}
-
 .input-form {
     width: 400px;
     border-radius: 15px;
