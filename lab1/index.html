@@ -9,52 +9,39 @@
 
     <script>
         function autoFill() {
-            document.getElementById('email').value = "example@example.pl";
-            document.getElementById('postcode').value = "45-970";
-            document.getElementById('nip').value = "792-684-78-23";
-            document.getElementById('ipv4').value = "192.168.1.1";
-            document.getElementById('number').value = "500-090-087";
+            document.getElementById("fmail").value = "piotr@gmail.com";
+            document.getElementById("postcode").value = "90-111";
+            document.getElementById("nip").value = "792-908-11-22";
+            document.getElementById("ID").value = "AAA123456";
+            document.getElementById("IPv4").value = "192.122.2.4";
+            document.getElementById("web").value = "www.asdasd.com";
+            document.getElementById("dir").value = "C:\\windows\\temp";
+            document.getElementById("directory_big").value = 'C:\\user\\desktop\\Lab';
+            document.getElementById("file").value = '/etc/hosts';
+            document.getElementById("ip6").value = 'FE80:0000:0000:0000:3423:B3FF:F8FF:1231';
+            document.getElementById("phone").value = '+48900800400';
         }
-    </script>
-
-    <script> 
-            function changecolor() {
-            const colorRed = rgb(255, 0, 0);
-            const colorGreen = rgb(0,255,0);
-
-                if document.getElementById('email').contains('@') {
-                    document
-                    .getElementById("email")
-                    .setAttribute("style", "border: 1px solid " + colorGreen);
-                } else {
-                    document
-                        .getElementById("email")
-                        .setAttribute("style", "border: 1px solid " + colorRed);
-                }
-
-            }
-
     </script>
 
 </head>
 <body>
 
     <div id="form">
-        <form>
+        <form name="myform" method="post">
 
-            <label class="form-label">Email</label>
+            <label for="email" class="form-label">Email</label>
             <input type="email" name="email" placeholder="example@example.com" class="input-form" id="email" oninput="changecolor(); return false;">
 
-            <label class="form-label">Postcode</label>
+            <label for="postcode" class="form-label">Postcode</label>
             <input type="text" name="postcode" placeholder="00-000" pattern="[0-9]{3}-[0-9]{2}" class="input-form" id="postcode" oninvalid="alert('You must fill out the form!');">
 
-            <label class="form-label">NIP</label>
+            <label for="nip" class="form-label">NIP</label>
             <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="000-0000-00-00" class="input-form" id="nip">
 
-            <label class="form-label">IPv4</label>
+            <label for="ipv4" class="form-label">IPv4</label>
             <input type="text" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{1.2}.[0-9]{1.2}" placeholder="111.111.11.11" class="input-form" id="ipv4">
 
-            <label class="form-label">Phone number</label>
+            <label for="number" class="form-label">Phone number</label>
             <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="111-222-333" class="input-form" id="number">
 
             <a id="btn-fill" href="#" onClick="autoFill(); return false;" role="button">Fill</a>

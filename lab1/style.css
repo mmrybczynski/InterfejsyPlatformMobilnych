@@ -20,10 +20,18 @@ body {
     border-radius: 15px;
     height: 20px;
     padding: 5px;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
     margin-bottom: 10px;
     background-color: white;
     color: black;
+}
+
+.input-form:invalid {
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.input-form:valid {
+    border: 1px solid rgb(0, 255, 0);
 }
 
 .form-label {
