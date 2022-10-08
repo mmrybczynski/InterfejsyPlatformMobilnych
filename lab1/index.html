@@ -9,12 +9,22 @@
 </head>
 <body>
 
-    <form>
-        <input type="email" name="email" placeholder="example@example.com" class="input-form">
-        <input type="text" name="postcode" placeholder="00-000" pattern="[0-9]{3}-[0-9]{2}" class="input-form">
-        <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="000-0000-00-00" class="input-form">
-        <input type="text" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{2}" placeholder="111.111.11.11" class="input-form">
-    </form>
-
+    <div id="form">
+        <form>
+            <input type="email" name="email" placeholder="example@example.com" class="input-form" id="email" oninput="confirmemail.value=email.value">
+            <input type="text" name="postcode" placeholder="00-000" pattern="[0-9]{3}-[0-9]{2}" class="input-form" id="postcode" oninput="confirmpostcode.value=postcode.value">
+            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="000-0000-00-00" class="input-form" id="nip" oninput="confirmnip.value=nip.value">
+            <input type="text" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{2}" placeholder="111.111.11.11" class="input-form" id="ipv4" oninput="confirmipv4.value=ipv4.value">
+        </form>
+    
+    
+        <div id="confirmation">
+            <h1>Twoje dane</h1>
+            <input type="text" id="confirmemail" readonly>
+            <input type="text" id="confirmpostcode" readonly>
+            <input type="text" id="confirmnip" readonly>
+            <input type="text" id="confirmipv4" readonly>
+        </div>
+    </div>
 </body>
 </html>

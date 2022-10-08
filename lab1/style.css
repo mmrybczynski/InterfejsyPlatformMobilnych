@@ -1,12 +1,43 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: darkgray;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
+}
+
+#form {
+    width: 412px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #87CEFA;
+    padding: 10px;
+}
+
+#confirmation {
+    background-color: #090979;
+    min-height: 20px;
+    color: white;
+    padding: 10px;
+}
+
+#confirmation input {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    margin-bottom: 10px;
+    color: white;
+    width: 100%;
 }
 
 .input-form {
     width: 400px;
-    border-radius: 10px;
+    border-radius: 15px;
     height: 20px;
     padding: 5px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
 }
