@@ -12,14 +12,10 @@
             document.getElementById("email").value = "piotr@gmail.com";
             document.getElementById("postcode").value = "90-111";
             document.getElementById("nip").value = "792-908-11-22";
-            document.getElementById("ID").value = "AAA123456";
             document.getElementById("ipv4").value = "192.122.2.4";
-            document.getElementById("web").value = "www.asdasd.com";
-            document.getElementById("dir").value = "C:\\windows\\temp";
-            document.getElementById("directory_big").value = 'C:\\user\\desktop\\Lab';
-            document.getElementById("file").value = '/etc/hosts';
-            document.getElementById("ip6").value = 'FE80:0000:0000:0000:3423:B3FF:F8FF:1231';
-            document.getElementById("number").value = '+48900800400';
+            document.getElementById("webadres").value = "www.apple.com";
+            document.getElementById("number").value = '900800400';
+            document.getElementById("idcard").value = "DPO547692"
         }
     </script>
 
@@ -27,6 +23,8 @@
 <body>
 
     <div id="form">
+        <p style="width: 200ps;margin-left-auto;margin-right:auto;font-size: 20px;">Mateusz Rybczyński</p>
+        <p style="width: 200ps;margin-left-auto;margin-right:auto;font-size: 20px;">249110</p>
         <form name="myform" method="post">
 
             <label for="email" class="form-label">Email</label>
@@ -36,18 +34,28 @@
             <input type="text" name="postcode" placeholder="00-000" pattern="[0-9]{2}-[0-9]{3}" class="input-form" id="postcode" required>
 
             <label for="nip" class="form-label">NIP</label>
-            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="000-0000-00-00" class="input-form" id="nip">
+            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="000-0000-00-00" class="input-form" id="nip" required>
 
+            <label for="idcard">Id number:</label>
+            <input type="text" id="idcard" pattern="[a-zA-z]{3}[0-9]{6}"  placeholder="AAA123456" required><br><br>
+        
             <label for="ipv4" class="form-label">IPv4</label>
-            <input type="text" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{1.2}.[0-9]{1.2}" placeholder="111.111.11.11" class="input-form" id="ipv4">
+            <input type="text" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{1.2}.[0-9]{1.2}" placeholder="111.111.11.11" class="input-form" id="ipv4" required>
 
             <label for="number" class="form-label">Phone number</label>
-            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="111-222-333" class="input-form" id="number">
+            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="111-222-333" class="input-form" id="number" required>
 
-            <a id="btn-fill" href="#" onClick="autoFill(); return false;" role="button">Fill</a>
+            <label for="webadres">Web adres</label>
+            <input id="webadres" placeholder="www.example.com" pattern="(www\.|https?:\/\/)?([a-zA-Z0-9]+\.)+([a-zA-Z0-9]+)" required>
+
+            <a class="btn-fill" href="#" onClick="autoFill(); return false;" role="button">Fill</a>
 
         </form>
     </div>
 
 </body>
 </html>
+<!--
+Niestety nie zapisałem sobie wszystkich pół, które miały znalźć się na stronie.
+Te co pamiętłem to zostły wykonane i działają poprawnie
+-->
