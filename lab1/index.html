@@ -17,6 +17,24 @@
         }
     </script>
 
+    <script>
+        function check() {
+            
+            var email = document.getElementById('email');
+            var postcode = document.getElementById('postcode');
+            var nip = document.getElementById('nip');
+            var ipv4 = document.getElementById('ipv4');
+            var number = document.getElementById('number');
+
+            if email.contains('@') {
+                document.body.input-form.toggle("green")
+            } else {
+                document.body.input-form.toggle("red")
+            }
+
+        }
+    </script>
+
 </head>
 <body>
 
