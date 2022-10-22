@@ -36,6 +36,17 @@ body {
     color: black;
 }
 
+.input-form-12h {
+    width: 400px;
+    border-radius: 15px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+}
+
 .input-form:invalid {
     border: 1px solid rgb(255, 0, 0);
 }
