@@ -88,8 +88,43 @@ function add(event) {
                 "Unable to add data."
             );
         };
-;}
+}
 
+//search field
+function search(event) {
+    event.preventDefault();
+    let searchInputs = document.getElementById("searchBar").value.split(' ');
+    drawTable(searchInputs);
+}
+
+//I will add remove option
+function remove(id) {
+    let request = db
+        .transaction(["client"],"readwrite")
+        .objectStore("client")
+        .delete(id);
+    request.onsuccess = function(ecent){
+        console.log(`Client ${id} removed`);
+        drawTable();
+    };
+}
+
+//Generate Table
+function generateTableHead(table,data) {
+    let thead = table.createTHead();
+    let row = thead.insertRow();
+    let th = document.createElement("th");
+    let text = document.createNode(key);
+    th.appendChild(text);
+    row.appendChild(th);
+
+    for(let key of data) {
+        let th = document.createElement("th");
+        let text = document.createTextNode(key);
+        th.appendChild(text);
+        row.appendChild(th);
+    }
+}
 //draw table
 function drawTable(filterItems) {
     if(document.getElementById("tbody") !== null) {
@@ -103,11 +138,4 @@ function drawTable(filterItems) {
     generateTable(table, filterItems);
     generateTableHead(table, data);
     document.getElementById("tableDiv").appendChild(table);
-}
-
-//search field
-function search(event) {
-    event.preventDefault();
-    let searchInputs = document.getElementById("searchBar").value.split(' ');
-    drawTable(searchInputs);
 }
