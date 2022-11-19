@@ -59,8 +59,55 @@ request.onupgradeneeded = function (event) {
     }
 };
 
+//add client to database
 function add(event) {
     event.preventDefault();
 
-    var formElements = document.getElementById("addForm")
+    var formElements = document.getElementById("addForm");
+
+    var request = db
+        .transaction(["client"],"readwrite")
+        .objectStore("client")
+        .add({
+            name: formElements[0].value,
+            lastName: formElements[1].value,
+            age: formElements[2].value,
+            email: formElements[3].value,
+            pesel: formElements[4].value,
+            address: formElements[5].value,
+            phoneNumber: formElements[6].value,
+        });
+
+        request.onsuccess = function(event) {
+            console.log("Client added correctly");
+            drawTable();
+        };
+
+        request.onerror = function(event) {
+            alert(
+                "Unable to add data."
+            );
+        };
 ;}
+
+//draw table
+function drawTable(filterItems) {
+    if(document.getElementById("tbody") !== null) {
+        document.querySelector("#tbody").remove();
+    }
+
+    let table = document.createElement("table");
+    table.setAttribute("id", "tbody");
+    let data = Object.keys(clientData[0]);
+
+    generateTable(table, filterItems);
+    generateTableHead(table, data);
+    document.getElementById("tableDiv").appendChild(table);
+}
+
+//search field
+function search(event) {
+    event.preventDefault();
+    let searchInputs = document.getElementById("searchBar").value.split(' ');
+    drawTable(searchInputs);
+}
