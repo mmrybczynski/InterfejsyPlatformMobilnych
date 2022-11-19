@@ -5,33 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>indexedDB Storage</title>
-    <scrip src="js.js"></scrip>
+    <scrip src="js.js" type="text/javascript"></scrip>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form id="addForm" onsubmit="return add(event)">
         <label for="name" class="formLabel">Name:</label>
-        <input name="name" type="text" class="inputLabel"></br>
+        <input name="name" type="text" class="inputLabel"><br/>
 
         <label for="lastName" class="formLabel">Last name:</label>
-        <input name="lastName" type="text" class="inputLabel"></br>
+        <input name="lastName" type="text" class="inputLabel"><br/>
 
         <label for="age" class="formLabel">Age:</label>
-        <input name="age" type="text" class="inputLabel"></br>
+        <input name="age" type="text" class="inputLabel"><br/>
 
         <label for="email" class="formLabel">Email:</label>
-        <input name="email" type="text" class="inputLabel"></br>
+        <input name="email" type="text" class="inputLabel"><br/>
 
         <label for="pesel" class="formLabel">Pesel:</label>
-        <input name="pesel" type="text" class="inputLabel"></br>
+        <input name="pesel" type="text" class="inputLabel"><br/>
 
         <label for="address" class="formLabel">Address:</label>
-        <input name="address" type="text" class="inputLabel"></br>
+        <input name="address" type="text" class="inputLabel"><br/>
 
         <label for="phoneNumber" class="formLabel">Phone number:</label>
-        <input name="phoneNumber" type="text" class="inputLabel"></br>
+        <input name="phoneNumber" type="text" class="inputLabel"><br/>
 
         <input id="submitBtn" type="submit" value="Add entry" />
     </form>
+
+    <div id="searchFiled">
+        <input id="searchBar" name="search" type="text" placeholder="Search..." />
+        <button onclick="return search(event)">Search</button>
+    </div>
+    <br/>
+    <div id="tableDiv"></div>
+    <br/>
 </body>
 </html>
