@@ -41,13 +41,13 @@
     <div id="jsonForm"></div>
     <br />
     <br />
-    <button onclick="return insertRandomCell()">Insert Random Cell</button>
+    <button id="insertRandom" onclick="return insertRandomCell()">Insert Random Cell</button>
     <br />
     <br />
 
     <div id="searchFiled">
         <input id="searchBar" name="search" type="text" placeholder="Search..." />
-        <button onclick="return search(event)">Search</button>
+        <button id="searchBtn" onclick="return search(event)">Search</button>
     </div>
     <br/>
     <div id="tableDiv"></div>
@@ -329,12 +329,14 @@
             let removeButton = document.createElement("button");
             removeButton.setAttribute("id", "removeButton" + cursor.key);
             removeButton.setAttribute("onclick", `remove(${cursor.key})`);
+            removeButton.setAttribute("class","removeBtnClass");
             removeButton.innerHTML = "remove";
             cell.appendChild(removeButton);
 
             let editButton = document.createElement("button");
             editButton.setAttribute("id", "editButton" + cursor.key);
             editButton.setAttribute("onclick", `fillEditData(${cursor.key})`);
+            editButton.setAttribute("class","editBtnClass");
             editButton.innerHTML = "edit";
             cell.appendChild(editButton);
 
