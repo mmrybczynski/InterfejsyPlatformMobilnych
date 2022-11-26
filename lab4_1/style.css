@@ -26,12 +26,55 @@ input[type="submit"], #searchBtn {
 tr {
     height: 20px;
 }
-#tbody > thead > tr > th, #tbody > thead > tr > td {
+#tbody > thead > tr > th:nth-child(1), #tbody > thead > tr > td:nth-child(1) {
     display: inline-block;
     margin: 10px;
-    min-width: 100px;
+    width: 30px;
     text-align: center;
 }
+#tbody > thead > tr > th:nth-child(2), #tbody > thead > tr > td:nth-child(2) {
+    display: inline-block;
+    margin: 10px;
+    width: 80px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(3), #tbody > thead > tr > td:nth-child(3) {
+    display: inline-block;
+    margin: 10px;
+    width: 80px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(4), #tbody > thead > tr > td:nth-child(4) {
+    display: inline-block;
+    margin: 10px;
+    width: 30px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(5), #tbody > thead > tr > td:nth-child(5) {
+    display: inline-block;
+    margin: 10px;
+    width: 180px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(6), #tbody > thead > tr > td:nth-child(6) {
+    display: inline-block;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(7), #tbody > thead > tr > td:nth-child(7) {
+    display: inline-block;
+    margin: 10px;
+    width: 80px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(8), #tbody > thead > tr > td:nth-child(8) {
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+
 #editBtn, #cancelBtn {
     width: 100px;
     height: 30px;
