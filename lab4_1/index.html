@@ -80,7 +80,11 @@
         address: "Zachodnia 2",
         phoneNumber: "500400200"
     },
-        ];
+    ];
+
+    const NAMES = ["Olek","Sebastian","Mateusz","Krystian"];
+    const SURNAMES = ["Kowalski","Sodol","Nowak","Stefanowski"];
+    const ADDRESSES = ["Politechnikki","Zgierska","Graniczna"];
   
         let db;
         let request = window.indexedDB.open("newDatabase", 1);
@@ -151,6 +155,12 @@
           
           drawTable(searchInputs);
         }
+
+        document
+        .getElementById("searchBar")
+        .addEventListener("input", (event) => {
+          drawTable(event.target.value.split(" "));
+        });
   
         function remove(id) {
           let request = db
