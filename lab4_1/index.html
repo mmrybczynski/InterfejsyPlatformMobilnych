@@ -151,6 +151,14 @@
 
         request.onsuccess = function (event) {
             console.log("Client added");
+            document.getElementById("idInput").value = "";
+            document.getElementById("nameInput").value = "";
+            document.getElementById("lastNameInput").value = "";
+            document.getElementById("ageInput").value = "";
+            document.getElementById("emailInput").value = "";
+            document.getElementById("peselInput").value = "";
+            document.getElementById("addressInput").value = "";
+            document.getElementById("phoneNumberInput").value = "";
             drawTable();
         };
 
