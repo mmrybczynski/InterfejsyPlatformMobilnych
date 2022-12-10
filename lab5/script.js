@@ -151,13 +151,13 @@ function editData(event) {
         let data = event.target.result;
 
         let client = {
-        name: formElements[1].value,
-        lastName: formElements[2].value,
-        age: formElements[3].value,
-        email: formElements[4].value,
-        pesel: formElements[5].value,
-        address: formElements[6].value,
-        phoneNumber: formElements[7].value,
+            name: formElements[1].value,
+            lastName: formElements[2].value,
+            age: formElements[3].value,
+            email: formElements[4].value,
+            pesel: formElements[5].value,
+            address: formElements[6].value,
+            phoneNumber: formElements[7].value,
         };
 
         console.log(client);
