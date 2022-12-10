@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+form {
+    padding: 20px;
+}
+.formLabel {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 110%;
+}
+input[type="text"] {
+    width: 400px;
+    border: none;
+    height: 30px;
+    font-size: 15px;
+    border-bottom: 2px solid #000;
+}
+input[type="submit"], #searchBtn {
+    width: 100px;
+    height: 30px;
+}
+tr {
+    height: 20px;
+}
+#tbody > thead > tr > th:nth-child(1), #tbody > thead > tr > td:nth-child(1) {
+    display: inline-block;
+    margin: 10px;
+    width: 30px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(2), #tbody > thead > tr > td:nth-child(2) {
+    display: inline-block;
+    margin: 10px;
+    width: 80px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(3), #tbody > thead > tr > td:nth-child(3) {
+    display: inline-block;
+    margin: 10px;
+    width: 80px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(4), #tbody > thead > tr > td:nth-child(4) {
+    display: inline-block;
+    margin: 10px;
+    width: 30px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(5), #tbody > thead > tr > td:nth-child(5) {
+    display: inline-block;
+    margin: 10px;
+    width: 180px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(6), #tbody > thead > tr > td:nth-child(6) {
+    display: inline-block;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(7), #tbody > thead > tr > td:nth-child(7) {
+    display: inline-block;
+    margin: 10px;
+    width: 80px;
+    text-align: center;
+}
+#tbody > thead > tr > th:nth-child(8), #tbody > thead > tr > td:nth-child(8) {
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#editBtn, #cancelBtn {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+}
+#insertRandom {
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+}
+.removeBtnClass, .editBtnClass {
+    width: 60px;
+    height: 30px;
+    margin-right: 15px;
+}
+#searchFiled, #tableDiv {
+    margin: 20px;
+}
