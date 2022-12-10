@@ -23,6 +23,7 @@ input[type="text"] {
     font-size: 15px;
     border-bottom: 2px solid #000;
     background: transparent;
+    color: #fff;
 }
 input[type="text"]:focus {
     background: rgba(255, 255, 255, 0.564);
