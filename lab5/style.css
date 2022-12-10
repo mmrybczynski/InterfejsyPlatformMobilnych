@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: rgb(0, 109, 27);
+    color: #fff;
+}
 form {
     padding: 20px;
 }
@@ -18,6 +22,10 @@ input[type="text"] {
     height: 30px;
     font-size: 15px;
     border-bottom: 2px solid #000;
+    background: transparent;
+}
+input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.564);
 }
 input[type="submit"], #searchBtn {
     width: 100px;
@@ -65,7 +73,7 @@ tr {
 #tbody > thead > tr > th:nth-child(7), #tbody > thead > tr > td:nth-child(7) {
     display: inline-block;
     margin: 10px;
-    width: 80px;
+    width: 140px;
     text-align: center;
 }
 #tbody > thead > tr > th:nth-child(8), #tbody > thead > tr > td:nth-child(8) {
