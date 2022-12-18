@@ -26,7 +26,7 @@ name: "Mateusz",
 lastName: "Rybczyński",
 age: "24",
 email: "216129@edu.p.lodz.pl",
-pesel: '12345678901',
+pesel: '12045678901',
 addres: "Stefanowskiego 22",
 phoneNumber: "500500200"
 },
@@ -35,7 +35,7 @@ name: "Andrzej",
 lastName: "Kowalski",
 age: "34",
 email: "marcin@marcin.com",
-pesel: '12345678902',
+pesel: '12045678902',
 address: "Zachodnia 2",
 phoneNumber: "500400200"
 },
@@ -344,6 +344,7 @@ function insertRandomCell() {
     let maxAge = Math.floor(60);
 
     let mails = ["@gmail.com","@wp.pl","@onet.pl","@icloud.com","@poczta.onet.pl","@imp.p.lodz.pl"];
+    let pessels = [98010212345,98010509876,99121212345,03303013098,12121284039];
     var numberOfMail = getRandomInt(5);
 
     let formElements = document.getElementById("addForm");
@@ -357,9 +358,7 @@ function insertRandomCell() {
     formElements[4].value = `${NAMES[
     Math.floor(Math.random() * NAMES.length)
     ].toLowerCase()}${mails[numberOfMail]}`;
-    formElements[5].value = `${Math.floor(
-    10000000000 + Math.random() * 90000000000
-    )}`;
+    formElements[5].value = `${pessels[numberOfMail]}`;
     formElements[6].value =
     ADDRESSES[Math.floor(Math.random() * ADDRESSES.length)];
     formElements[7].value = `${Math.floor(
