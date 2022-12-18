@@ -124,8 +124,8 @@ function search(event) {
 }
 
 document
-        .getElementById("searchBar")
-        .addEventListener("input", (event) => {
+    .getElementById("searchBar")
+    .addEventListener("input", (event) => {
         drawTable(event.target.value.split(" "));
         });
 
@@ -160,7 +160,7 @@ function editData(event) {
             phoneNumber: formElements[7].value,
         };
 
-        console.log(client);
+        //console.log(client);
 
         // Get the old value that we want to update
         let requestUpdate = db
@@ -169,7 +169,7 @@ function editData(event) {
         .put(client, parseInt(formElements[0].value));
 
         requestUpdate.onsuccess = function (event) {
-        console.log("Record updated");
+        //console.log("Record updated");
 
 
         document.getElementById("editBtn").disabled = true;
@@ -240,7 +240,7 @@ function remove(id) {
     .delete(id);
 
     request.onsuccess = function (event) {
-    console.log(`Client ${id} removed...`);
+    //console.log(`Client ${id} removed...`);
     drawTable();
     };
 }
