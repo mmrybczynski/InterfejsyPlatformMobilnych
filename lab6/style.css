@@ -26,6 +26,9 @@ input[type="text"] {
     color: #fff;
     transition: all 0.2s ease-in-out;
 }
+input[type="text"]:invalid {
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
 input[type="text"]:focus {
     background: rgba(255, 255, 255, 0.564);
     color: #000;

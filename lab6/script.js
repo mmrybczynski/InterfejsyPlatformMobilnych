@@ -118,16 +118,16 @@ function add(event) {
 function search(event) {
     event.preventDefault();
 
-    let searchInputs = document.getElementById("searchBar").value.split(' ');
+    let searchInputs = document.getElementById("nameInput").value.split(' ');
 
     drawTable(searchInputs);
 }
 
 document
-.getElementById("searchBar")
-.addEventListener("input", (event) => {
-drawTable(event.target.value.split(" "));
-});
+        .getElementById("searchBar")
+        .addEventListener("input", (event) => {
+        drawTable(event.target.value.split(" "));
+        });
 
 function editData(event) {
     event.preventDefault();

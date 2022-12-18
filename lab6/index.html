@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 5 - IPM</title>
+    <title>Lab 6 - IPM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form id="addForm" onsubmit="return add(event)">
         <input class="inputLabel" id="idInput" name="id" type="number" style="visibility: hidden" /><br/>
         <label for="name" class="formLabel">Name:</label>
-        <input name="name" id="nameInput" type="text" class="inputLabel"><br/>
+        <input name="name" id="nameInput" type="text" class="inputLabel" required><br/>
 
         <label for="lastName" class="formLabel">Last name:</label>
-        <input name="lastName" id="lastNameInput" type="text" class="inputLabel"><br/>
+        <input name="lastName" id="lastNameInput" type="text" class="inputLabel" required><br/>
 
         <label for="age" class="formLabel">Age:</label>
-        <input name="age" id="ageInput" type="text" class="inputLabel"><br/>
+        <input name="age" id="ageInput" placeholder="45" type="text" class="inputLabel" required><br/>
 
         <label for="email" class="formLabel">Email:</label>
-        <input name="email" id="emailInput" type="text" class="inputLabel"><br/>
+        <input name="email" id="emailInput" placeholder="example@example.com" type="text" class="inputLabel" required><br/>
 
         <label for="pesel" class="formLabel">Pesel:</label>
-        <input name="pesel" id="peselInput" type="text" class="inputLabel"><br/>
+        <input name="pesel" id="peselInput" placeholder="99121112345" type="text" class="inputLabel" required><br/>
 
         <label for="address" class="formLabel">Address:</label>
-        <input name="address" id="addressInput" type="text" class="inputLabel"><br/>
+        <input name="address" id="addressInput" placeholder="Zgierska 1" type="text" class="inputLabel" required><br/>
 
         <label for="phoneNumber" class="formLabel">Phone number:</label>
-        <input name="phoneNumber" id="phoneNumberInput" type="text" class="inputLabel"><br/>
+        <input name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="111-222-333" id="phoneNumberInput" type="text" class="inputLabel" required><br/>
 
         <input id="submitBtn" type="submit" value="Add entry" />
     </form>
@@ -47,7 +47,8 @@
 
     <div id="searchFiled">
         <input id="searchBar" name="search" type="text" placeholder="Search..." />
-        <button id="searchBtn" onclick="return search(event)">Search</button>
+        <button id="searchBtn" onclick="return search(event)">Search</button> <br/>
+
     </div>
     <br/>
     <div id="tableDiv"></div>
