@@ -41,7 +41,7 @@ phoneNumber: "500400200"
 },
 ];
 
-const NAMES = ["Olek","Sebastian","Mateusz","Krystian"];
+const NAMES = ["Olek","Sebastian","Mateusz","Krystian","Oliwier"];
 const SURNAMES = ["Kowalski","Sodol","Nowak","Stefanowski"];
 const ADDRESSES = ["Politechnikki","Zgierska","Graniczna"];
 
@@ -345,19 +345,18 @@ function insertRandomCell() {
 
     let mails = ["@gmail.com","@wp.pl","@onet.pl","@icloud.com","@poczta.onet.pl","@imp.p.lodz.pl"];
     let pessels = [98010212345,98010509876,99121212345,03303013098,12121284039];
+    let names =["Mateusz","Krystian","Oliwier","Karol","Konrad"];
     var numberOfMail = getRandomInt(5);
 
     let formElements = document.getElementById("addForm");
 
-    formElements[1].value = NAMES[Math.floor(Math.random() * NAMES.length)];
+    formElements[1].value = NAMES[numberOfMail];
     formElements[2].value =
     SURNAMES[Math.floor(Math.random() * SURNAMES.length)];
     formElements[3].value = `${Math.floor(
     Math.random() * (maxAge - minAge) + minAge
     )}`;
-    formElements[4].value = `${NAMES[
-    Math.floor(Math.random() * NAMES.length)
-    ].toLowerCase()}${mails[numberOfMail]}`;
+    formElements[4].value = `${NAMES[numberOfMail].toLowerCase()}${mails[numberOfMail]}`;
     formElements[5].value = `${pessels[numberOfMail]}`;
     formElements[6].value =
     ADDRESSES[Math.floor(Math.random() * ADDRESSES.length)];
