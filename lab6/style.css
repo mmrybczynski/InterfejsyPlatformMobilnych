@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(66, 66, 66);
+    color: #fff;
+}
+form {
+    padding: 20px;
+}
+.formLabel {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 110%;
+}
+input[type="text"] {
+    width: 400px;
+    border: none;
+    height: 30px;
+    font-size: 15px;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.564);
+    color: #000;
+    outline: none;
+}
+input[type="submit"], #searchBtn {
+    width: 100px;
+    height: 30px;
+}
+tr {
+    height: 23px;
+}
+/* id */
+#tbody > thead > tr > th:nth-child(1), #tbody > thead > tr > td:nth-child(1) {
+    display: inline-block;
+    margin: 10px;
+    width: 30px;
+    text-align: center;
+}
+/* name */
+#tbody > thead > tr > th:nth-child(2), #tbody > thead > tr > td:nth-child(2) {
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+/* lastname */
+#tbody > thead > tr > th:nth-child(3), #tbody > thead > tr > td:nth-child(3) {
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+/* age */
+#tbody > thead > tr > th:nth-child(4), #tbody > thead > tr > td:nth-child(4) {
+    display: inline-block;
+    margin: 10px;
+    width: 30px;
+    text-align: center;
+}
+/* e-mail */
+#tbody > thead > tr > th:nth-child(5), #tbody > thead > tr > td:nth-child(5) {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+/*pesel*/
+#tbody > thead > tr > th:nth-child(6), #tbody > thead > tr > td:nth-child(6) {
+    display: inline-block;
+    margin: 10px;
+    width: 110px;
+    text-align: center;
+}
+/* address */
+#tbody > thead > tr > th:nth-child(7), #tbody > thead > tr > td:nth-child(7) {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+/* phone */
+#tbody > thead > tr > th:nth-child(8), #tbody > thead > tr > td:nth-child(8) {
+    display: inline-block;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+#editBtn, #cancelBtn {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+}
+#insertRandom {
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+}
+.removeBtnClass, .editBtnClass {
+    width: 60px;
+    height: 30px;
+    margin-right: 15px;
+}
+#searchFiled, #tableDiv {
+    margin: 20px;
+}

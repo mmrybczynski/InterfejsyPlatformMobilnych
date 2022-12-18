@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - IPM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="addForm" onsubmit="return add(event)">
+        <input class="inputLabel" id="idInput" name="id" type="number" style="visibility: hidden" /><br/>
+        <label for="name" class="formLabel">Name:</label>
+        <input name="name" id="nameInput" type="text" class="inputLabel"><br/>
+
+        <label for="lastName" class="formLabel">Last name:</label>
+        <input name="lastName" id="lastNameInput" type="text" class="inputLabel"><br/>
+
+        <label for="age" class="formLabel">Age:</label>
+        <input name="age" id="ageInput" type="text" class="inputLabel"><br/>
+
+        <label for="email" class="formLabel">Email:</label>
+        <input name="email" id="emailInput" type="text" class="inputLabel"><br/>
+
+        <label for="pesel" class="formLabel">Pesel:</label>
+        <input name="pesel" id="peselInput" type="text" class="inputLabel"><br/>
+
+        <label for="address" class="formLabel">Address:</label>
+        <input name="address" id="addressInput" type="text" class="inputLabel"><br/>
+
+        <label for="phoneNumber" class="formLabel">Phone number:</label>
+        <input name="phoneNumber" id="phoneNumberInput" type="text" class="inputLabel"><br/>
+
+        <input id="submitBtn" type="submit" value="Add entry" />
+    </form>
+
+    <button id="editBtn" onclick="editData(event)" disabled>Edit entry</button>
+    <button id="cancelBtn" onclick="cancelEdit(event)" disabled>
+      Cancel Edit
+    </button>
+    <div id="jsonForm"></div>
+    <br />
+    <br />
+    <button id="insertRandom" onclick="return insertRandomCell()">Insert Random Cell</button>
+    <br />
+    <br />
+
+    <div id="searchFiled">
+        <input id="searchBar" name="search" type="text" placeholder="Search..." />
+        <button id="searchBtn" onclick="return search(event)">Search</button>
+    </div>
+    <br/>
+    <div id="tableDiv"></div>
+    <br/>
+    <script src="script.js"></script>
+</body>
+</html>
